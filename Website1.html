@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<link href="https://fonts.googleapis.com/css?family=Mako:400|Merriweather:400,400italic,700,700italic|Abril+Fatface:400" rel="stylesheet" type="text/css">
+<link href="https://static.tumblr.com/yzs4yqx/aSjo8f2eh/reset.css" rel="stylesheet" type="text/css">
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet"="tet/css">
+<script type="text/javascript" src="http://static.tumblr.com/p2evvtm/Wycm17d1m/tumblr_search_box.js"></script>
+
+<script type="text/javascript">
+function openPopup(el) {
+$('.popup').hide();
+$('#' + el).fadeIn(200);   
+}
+function closePopup() {
+$('.popup').fadeOut(300);
+}
+</script>
+
+<style>
+    
+body {
+    font-family: Mako, Arial;
+    color: #9f9f9f;
+    font-size: 12px;
+    background: white;
+    line-height: 16px;
+}
+
+sub, sup, small {
+    font-size: {select:Body Font Size};
+}
+
+a {
+    color: #9f9f9f;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: grey;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+h1 {
+    font: normal 12px Merriweather;
+    background: purple;
+    padding: 5px 0;
+    color: #9f9f9f;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#bar {
+        height: 5px;
+        width: 100%;
+        position: fixed;
+        z-index: 9;
+        background: #abbaef;
+        top: 0;
+        left: 0;
+}
+
+#header {
+        width: 100%;
+        height: 190px;
+        background-color: #eeeeee;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        margin-top: 5px;
+}
+
+#header-content {
+        margin: 0 auto;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+}
+
+#avatar {
+    margin-top: 100px;
+}
+
+#avatar button {
+    position: absolute;
+    background: none;
+    padding: 0;
+    outline: none;
+    border: none;
+    margin-left: 40px;
+}
+
+#avatar button:hover {
+    cursor: pointer;
+}
+
+.popup {
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    position: fixed;
+    text-align: center;
+}
+
+.popup-content {
+    width: 450px;
+    height: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: table;
+}
+
+.popup-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.popup-background {
+    background: white;
+    border-radius: 7px;
+    padding: 60px 0 62px 0;
+}
+
+
+#description {
+    margin: 27px 0 20px 0;
+    padding: 0 30px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+#navigation {
+    list-style-type: none;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+    margin: 0 0 40px 85px;
+}
+
+#navigation li {
+    width: 120px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 7px;
+    border-bottom: 1px solid blue;
+    padding: 7px;
+    margin-right: 7px;
+}
+
+#navigation b {
+    color: blue;
+    font-size: 8px;
+    font-weight: normal;
+    margin-right: 4px;
+}
+
+#navigation a {
+    color: {color:Body Font};
+}
+
+#navigation a:hover {
+    color: {color:Hover Link};
+}
+
+
+#initial {
+    position: absolute;
+    margin: 19px 0 0 -147px;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    font-size: 40px;
+    text-transform: lowercase;
+    font-family: Abril Fatface;
+    color: pink;
+    background: yellow;
+    line-height: 82px;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#header-content:hover #initial {
+    opacity: 0.8;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#avatar img {
+        border-radius: 100%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 1px #eeeeee;
+        width: 120px;
+        height: 120px;
+}
+
+#avatar hr {
+        width: 80px;
+        margin-top: 15px;
+        border-color: white;
+}
+
+#title {
+        font-family: Mako;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 9px;
+        margin-left: 10px;
+        letter-spacing: 6px;
+        color: #abbaef;
+        text-align: center;
+} 
+
+#subtitle {
+        colour: white;
+        padding: 2px 6px;
+        font-size: 8px;
+        font-family: Merriweather;
+        font-style: italic;
+        text-align: center;
+}
+
+#subtitlecontainer {
+color: white;
+        background: #abbaef;
+        padding: 2px 6px;
+        font-size: 8px;
+        font-family: Merriweather;
+        margin-top: 10px;
+        width: 200px;
+        margin: auto;
+        font-style: italic;
+        text-align: center;
+}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.hover {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+} 
+
+.post:hover .hover {
+    opacity: 1;
+}
+
+.caption {
+    background: black;
+    padding: 10px;
+    line-height: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.caption p:first-of-type {
+    margin: 0;
+}
+
+.hover .caption {
+    max-height: 50px;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+    overflow: auto;
+    position: absolute;
+    top: 33px;
+    left: 8px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+</style>
+</head>
+<body>
+
+<div id="bar"></div>
+<div id="header"></div>
+
+<div id="header-content">
+<div id="avatar">
+<img src="avatar.png">
+
+</div>
+</div>
+
+
+<div id="title">
+CHRISTINE</div>
+<div id="subtitlecontainer"><div id="subtitle">subtitletest</div></div>
+
+<div id="container">
+<br>
+Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+
+</div>
+
+
+</body>
+</html>
